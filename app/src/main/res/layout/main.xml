@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:id="@+id/options"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"/>
+    <CheckBox
+        android:id="@+id/keepScreenOn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Keep screen on"/>
+        <CheckBox
+            android:id="@+id/maxBrightness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Force maximum brightness"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
